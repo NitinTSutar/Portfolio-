@@ -99,7 +99,7 @@ span {
   position: relative;
   width: 35vw;
   border-radius: 50%;
-  top: 1rem;
+  /* top: -0.3rem; */
 }
 .home-content p {
   font-size: 1.6rem;
@@ -156,7 +156,7 @@ span {
   position: relative;
   width: 35vw;
   border-radius: 50%;
-  top: 1rem;
+  /* top: 1rem; */
 }
 .heading {
   text-align: center;
@@ -230,10 +230,11 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: 2rem;
+  flex-wrap: wrap;
+  
 }
 .skills-container .skills-box {
-  flex: 1 1 40rem;
+  flex: 1 1 20rem;
   background: var(--bg-color);
   padding: 3rem 2rem 4rem;
   margin: 0.5rem;
@@ -291,20 +292,24 @@ span {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 4rem;
+  padding: 0 6rem;
   cursor: pointer;
   transition: 0.3s ease;
 }
 .projects-box .projects-info:hover {
-  background: radial-gradient(rgba(0, 0, 0, 0.105), var(--main-color));
+  background: radial-gradient(rgba(244, 217, 217, 0.105), var(--main-color));
   transform: scale(1.1);
 }
 .projects-info h4 {
   font-size: 3rem;
+  color: rgb(253, 226, 226);
+  text-shadow: 0 0 5px #000000, 0 0 20px #000000;
 }
 .projects-info p {
   font-size: 1.6rem;
+  /* background-color: rgba(255, 0, 0, 0.388); */
   margin: 0.3rem 0 1rem;
+  text-shadow: 0 0 5px #000000, 0 0 7px #000000;
 }
 .projects-info a {
   display: inline-flex;
@@ -312,7 +317,8 @@ span {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background-color: var(--text-color);
+  background-color: rgba(239, 236, 236, 0.237);
+  border: px solid black;
   border-radius: 50%;
 }
 .projects-info a i {
@@ -411,6 +417,21 @@ span {
         font-size: 55%;
     }
 }
+
+@media(max-width: 1073px){
+    .projects-box .projects-info {
+        padding: 0 5rem;
+    }
+    .projects-box h4{
+        font-size: 2.7rem;
+    }
+    .projects-box p{
+        font-size: 1.4rem;
+    }
+    .projects-info a i{
+        font-size: 3rem;
+    }
+}
 @media(max-width:991px){
     header{
         padding: 2rem 3%;
@@ -426,6 +447,35 @@ span {
     }
     .footer{
         padding: 2rem 3%;
+    }
+}
+@media(max-width: 900px){
+    .projects-box .projects-info{
+        padding: 0 35px;
+    }
+    .projects-box h4{
+        font-size: 20px;
+    }
+    .projects-box p{
+        font-size: 12px;
+    }
+    .projects-box a{
+        height: 40px;
+        width: 40px;
+    }
+    .projects-box a i{
+        font-size: 30px;
+    }
+}
+@media(max-width:805px){
+    /* .header{
+        padding: 22px 65px;
+    } */
+    a.logo{
+        font-size: 2.5rem;
+    }
+    .navbar a{
+        margin: 0 0 0 30px;
     }
 }
 @media(max-width: 768px){
@@ -462,14 +512,14 @@ span {
     }
     .home-img img{
         width: 70vw;
-        margin-top: 4rem;
+        /* margin-top: 4rem; */
     }
     .about{
         flex-direction: column-reverse;
     }
     .about img{
         width: 70vw;
-        margin-top: 4rem;
+        /* margin-top: 4rem; */
     }
     .education h2{
         margin-bottom: 3rem;
@@ -479,5 +529,59 @@ span {
     }
     .projects-container{
         grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width: 611px){
+    .projects-box .projects-info {
+        padding: 0 5rem;
+    }
+    .projects-box h4{
+        font-size: 3.5rem;
+    }
+    .projects-box p{
+        font-size: 1.8rem;
+    }
+    .projects-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 50px 11px 50px;
+    }
+}
+@media(max-width: 500px){
+    .projects-box .projects-info {
+        padding: 0 5rem;
+    }
+    .projects-box h4{
+        font-size: 3rem;
+    }
+    .projects-box p{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 400px){
+    .projects-box .projects-info {
+        padding: 0 4rem;
+    }
+    .projects-box h4{
+        font-size: 2.5rem;
+    }
+    .projects-box p{
+        font-size: 1rem;
+    }
+    .projects-container{
+        
+        padding: 0 30px 11px 30px;
+    }
+    .projects-box a{
+        height: 30px;
+        width: 30px;
+    }
+    .projects-box a i{
+        font-size: 2.5rem;
+    }
+    .skills-box{
+        padding:20px 12px 28px;
+    }
+    .education span, h2.heading{
+        font-size: 60px;
     }
 }

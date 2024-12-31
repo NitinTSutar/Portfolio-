@@ -79,7 +79,7 @@ section {
 }
 span {
   color: var(--main-color);
-  text-shadow: 0 0 25px var(--main-color);
+  text-shadow: 0 0 8px var(--main-color);
 }
 .home-content h3:nth-of-type(2) {
   margin-bottom: 2rem;
@@ -279,7 +279,7 @@ span {
   transition: 0.5s ease;
 }
 .projects-box:hover img {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .projects-box .projects-info {
   position: absolute;
@@ -294,11 +294,15 @@ span {
   text-align: center;
   padding: 0 6rem;
   cursor: pointer;
+  /* transition: 0.3s ease; */
+  background: radial-gradient(rgba(244, 217, 217, 0.105), black);
   transition: 0.3s ease;
 }
-.projects-box .projects-info:hover {
-  background: radial-gradient(rgba(244, 217, 217, 0.105), var(--main-color));
-  transform: scale(1.1);
+.projects-box:hover {
+  background: none;
+}
+.projects-info:hover {
+  background: none;
 }
 .projects-info h4 {
   font-size: 3rem;
@@ -317,9 +321,10 @@ span {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background-color: rgba(239, 236, 236, 0.237);
+  background-color: rgba(239, 236, 236, 0.413);
   border: px solid black;
   border-radius: 50%;
+  border: 1px solid black;
 }
 .projects-info a i {
   font-size: 3rem;
@@ -366,6 +371,9 @@ span {
   padding-bottom: 25px;
   color: black;
 }
+.social a i{
+  padding-top: 5px;
+}
 .footer .social a {
   font-size: 24px;
   color: var(--text-color);
@@ -376,7 +384,7 @@ span {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  margin: 0 8px;
+  margin: 0 15px;
   box-shadow: inset 0 0 10px var(--main-color), 0 0 25px var(--main-color);
   transition: 0.3s ease;
 }
@@ -411,11 +419,22 @@ span {
   font-size: 12px;
   color: var(--text-color);
 }
+@media(min-width:1201px){
+  /* .projects-box .projects-info{
+    padding: 0 3rem;
+  } */
+   html{
+    font-size: 50%;
+   }
+}
 
 @media(max-width:1200px){
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
+    .projects-box .projects-info{
+    padding: 0 4rem;
+  }
 }
 
 @media(max-width: 1073px){

@@ -17,7 +17,20 @@
   <body>
     <header class="header">
       <a href="#home" class="logo"> Nitin <span>Sutar</span> </a>
-
+      <div class="clock">
+        <div>
+          <span id="hour">00</span>
+          <span class="text">Hours</span>
+        </div>
+        <div>
+          <span id="minutes">00</span>
+          <span class="text">Minutes</span>
+        </div>
+        <div>
+          <span id="seconds">00</span>
+          <span class="text">Seconds</span>
+        </div>
+      </div>
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
@@ -28,9 +41,11 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      
     </header>
 
     <section class="home" id="home">
+      <div id="particles-js"></div>
       <div class="home-content">
         <h3>Hi,</h3>
         <h1>It's Nitin Sutar</h1>
@@ -234,7 +249,9 @@
       </ul>
       <p class="copyright">© All Rights Reserved | Nitin Sutar</p>
     </footer>
-
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="script.js"></script>
+    
   </body>
 </html>

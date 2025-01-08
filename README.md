@@ -14,8 +14,7 @@ Check out the live version of my portfolio here: [Portfolio Website](https://nit
 2. [Technologies Used](#technologies-used)
 3. [Sections Overview](#sections-overview)
 4. [How to Use](#how-to-use)
-5. [Screenshots](#screenshots)
-6. [Feedback](#feedback)
+5. [Feedback](#feedback)
 
 ---
 
@@ -73,14 +72,6 @@ Check out the live version of my portfolio here: [Portfolio Website](https://nit
 
 ---
 
-## 🖼️ Screenshots
-### Home Section
-![Home Section](./assets/home_screenshot.png)
-
-### Projects Section
-![Projects Section](./assets/projects_screenshot.png)
-
----
 
 ## 💬 Feedback
 I’d love to hear your thoughts! Feel free to connect with me on:

@@ -4,6 +4,9 @@ let navLinks = document.querySelectorAll('header nav a');
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
+let inputBox = document.getElementById('input-box');
+let totalCounter = document.getElementById('total-counter');
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -24,3 +27,13 @@ window.onscroll = () => {
         }
     });
 };
+
+inputBox.addEventListener("keyup", () => {
+    updateCounter();
+});
+
+updateCounter()
+
+function updateCounter(){
+    totalCounter.innerText = inputBox.value.length;
+}

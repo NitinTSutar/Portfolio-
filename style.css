@@ -99,7 +99,7 @@ span {
   position: relative;
   width: 35vw;
   border-radius: 50%;
-  /* top: -0.3rem; */
+  top: 5px;
 }
 .home-content p {
   font-size: 1.6rem;
@@ -156,7 +156,6 @@ span {
   position: relative;
   width: 35vw;
   border-radius: 50%;
-  /* top: 1rem; */
 }
 .heading {
   text-align: center;
@@ -342,13 +341,13 @@ span {
   text-align: center;
   margin-bottom: 3rem;
 }
-.contact form .input-box {
+.contact form .input-box,.counter-p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .contact form .input-box input,
-.contact form textarea {
+.contact form textarea,.counter-p {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -357,6 +356,11 @@ span {
   border-radius: 0.8rem;
   margin: 1rem 0;
   resize: none;
+}
+.counter-p{
+  justify-content: flex-start;
+  width: 180px;
+  color: #757575;
 }
 
 .footer {

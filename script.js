@@ -10,6 +10,15 @@ let totalCounter = document.getElementById('total-counter');
 let hourEl = document.getElementById("hour");
 let minuteEl = document.getElementById("minutes");
 let secondEl = document.getElementById("seconds");
+let sharingan = document.getElementById("rotates");
+const imageSources = [
+    "./assets/Sharingan_1.png",
+    "./assets/Sharingan_2.png",
+    "./assets/Sharingan_3.png",
+    "./assets/Sharingan_4.png",
+    "./assets/Sharingan_5.png",
+    "./assets/Sharingan_6.png",
+]
 window.addEventListener(
     "scroll",
     () => {
@@ -17,6 +26,12 @@ window.addEventListener(
         "--scroll",
         window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
       );
+      const scrollPosition = window.scrollY;
+      const sectionIndex = Math.min(
+        Math.floor(scrollPosition / window.innerHeight), imageSources.length - 1
+      );
+      
+        sharingan.src = imageSources[sectionIndex];     
     },
     false
   );

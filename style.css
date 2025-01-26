@@ -36,6 +36,24 @@ body {
   align-items: center;
   z-index: 100;
 }
+#rotates {
+  position: fixed;
+  top: 12%;
+  right: 2%;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -2s);
+
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .logo {
   font-size: 3rem;
   color: var(--text-color);
@@ -237,6 +255,7 @@ span {
   text-align: center;
   font-size: 8rem;
 }
+
 .about-content h2 {
   text-align: left;
   line-height: 1.5;
@@ -574,6 +593,7 @@ span {
 @media(max-width: 768px){
     #menu-icon{
         display: block;
+        margin-right: 30px;
     }
     .navbar{
         position: absolute;

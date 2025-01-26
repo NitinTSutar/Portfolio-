@@ -10,7 +10,16 @@ let totalCounter = document.getElementById('total-counter');
 let hourEl = document.getElementById("hour");
 let minuteEl = document.getElementById("minutes");
 let secondEl = document.getElementById("seconds");
-
+window.addEventListener(
+    "scroll",
+    () => {
+      document.body.style.setProperty(
+        "--scroll",
+        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+      );
+    },
+    false
+  );
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -31,6 +40,7 @@ window.onscroll = () => {
         }
     });
 };
+
 
 inputBox.addEventListener("keyup", () => {
     updateCounter();

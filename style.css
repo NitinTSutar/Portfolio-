@@ -45,6 +45,8 @@ body {
   animation-delay: calc(var(--scroll) * -2s);
   animation-iteration-count: infinite;
   animation-fill-mode: both;
+  opacity: 1;
+  transition: opacity .5s ease;
 }
 
 @keyframes rotate {

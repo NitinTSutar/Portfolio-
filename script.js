@@ -77,6 +77,12 @@ function updateClock(){
     m = m<10 ? "0" + m : m;
     s = s<10 ? "0" + s : s;
 
+    if(h == 0){
+        h = 1;
+    }else if(h > 12){
+        h -= 12;
+    }
+
     hourEl.innerText = h;
     minuteEl.innerText = m;
     secondEl.innerText = s;

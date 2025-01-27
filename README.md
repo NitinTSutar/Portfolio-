@@ -25,6 +25,9 @@ Check out the live version of my portfolio here: [Portfolio Website](https://nit
 - **Social Media Integration:** Links to my LinkedIn, GitHub, and Instagram profiles.
 - **Contact Form:** Simple and functional form for visitors to reach out.
 - **Smooth Animations:** Subtle transitions and hover effects for enhanced user experience.
+- **Dynamic Sharingan Animation:** A unique animation inspired by the Sharingan from Naruto, which changes based on scroll position.
+- **Real-Time Clock:** A live clock displaying the current time in hours, minutes, and seconds.
+- **Particle.js Background:** An interactive particle effect background on the home section.
 
 ---
 
@@ -34,6 +37,8 @@ Check out the live version of my portfolio here: [Portfolio Website](https://nit
 - **JavaScript**: Interactivity and animations.
 - **Font Awesome** & **Boxicons**: Icons for design elements.
 - **Web3Forms API**: For contact form submission.
+- **Particle.js**: For the interactive background animation.
+- **Scroll-based Animations**: Custom JavaScript for scroll-triggered animations.
 
 ---
 
@@ -84,3 +89,4 @@ If you encounter any issues or have suggestions for improvement, don’t hesitat
 ---
 
 Thank you for visiting my portfolio repository! 😊
+

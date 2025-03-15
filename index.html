@@ -1,259 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/6e6961a934.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <img src="./assets/Sharingan_1.png" width="50" height="50" alt="Mangekyou_Sharingan_Sasuke" id="rotates">
-      <a href="#home" class="logo"> Nitin <span>Sutar</span> </a>
-      <div class="clock">
-        <div>
-          <span id="hour">00</span>
-          <span class="text">Hours</span>
-        </div>
-        <div>
-          <span id="minutes">00</span>
-          <span class="text">Minutes</span>
-        </div>
-        <div>
-          <span id="seconds">00</span>
-          <span class="text">Seconds</span>
-        </div>
-      </div>
-      <i class="bx bx-menu" id="menu-icon"></i>
-
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      
-    </header>
-
-    <section class="home" id="home">
-      <div id="particles-js"></div>
-      <div class="home-content">
-        <h3>Hi,</h3>
-        <h1>It's Nitin Sutar</h1>
-        <h3>I'm a <span>Frontend Developer</span></h3>
-       
-
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/nitin-sutar-859a5b23a/"
-            ><i class="bx bxl-linkedin-square"></i
-          ></a>
-          <a href="https://github.com/NitinTSutar"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="https://www.instagram.com/__.nitin_sutar__/"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-        </div>
-
-        <a href="assets/Nitin_Sutar_CV.pdf" class="btn" download>Download CV</a>
-      </div>
-      <div class="home-img">
-        <img src="assets/new-image.png" alt="" />
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="assets/new-image.png" alt="" />
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend <span>Developer</span></h3>
-        <p>
-            A passionate front-end developer skilled in HTML, CSS, JavaScript, and React, with a passion for building
-            user-friendly and visually engaging web applications. Enthusiastic about collaborating with teams and
-            continually enhancing skills through hands-on experience.
-        </p>
-        <!-- <a href="#" class="btn">Read More</a> -->
-      </div>
-    </section>
-
-    <section class="education" id="education">
-      <h2 class="heading">My <span>Education</span></h2>
-      <div class="education-container">
-        <div class="education-box">
-          <i class="fa fa-graduation-cap"></i>
-          <h3>MSc IT</h3>
-          <p>
-            Completed my Post Graduation from Sathaye College (Autnomous) in the
-            Academic Year 2022-2024
-          </p>
-        </div>
-        <div class="education-box">
-          <i class="fa fa-graduation-cap"></i>
-          <h3>BSc IT</h3>
-          <p>
-            Completed my Graduation from L S Raheja College of Arts and Commerce
-            in the Academic Year 2019-2022
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
-      <div class="skills-container">
-        <div class="skills-box">
-          <i class="bx bxl-html5"></i>
-          <h3>HTML5</h3>
-        </div>
-        <div class="skills-box">
-          <i class="bx bxl-css3"></i>
-          <h3>CSS3</h3>
-        </div>
-        <div class="skills-box">
-          <i class="bx bxl-javascript"></i>
-          <h3>JavaScript</h3>
-        </div>
-        <div class="skills-box">
-          <i class="bx bxl-git"></i>
-          <h3>GIT</h3>
-        </div>
-        <div class="skills-box">
-          <i class="bx bxl-github"></i>
-          <h3>GitHub</h3>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <h2 class="heading">Recent <span>projects</span></h2>
-
-      <div class="projects-container">
-        <div class="projects-box">
-          <img src="assets/1 (1).png" alt="" />
-          <div class="projects-info">
-            <h4>Landing Page</h4>
-            <p>A simple Landing Page built using HTML & CSS.</p>
-            <a href="https://css-1-landing-page.netlify.app/"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="projects-box">
-          <img src="assets/card-swiper.png " alt="" />
-          <div class="projects-info">
-            <h4>Card-Swiper</h4>
-            <p>A simple Card-Swiper with unlimited Images</p>
-            <a href="https://unlimited-card-swipe.netlify.app/"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="projects-box">
-          <img src="assets/1 (2).png" alt="" />
-          <div class="projects-info">
-            <h4>Responsive Landing Page</h4>
-            <p>A fully responsive website built using HTML & CSS.</p>
-            <a href="https://css-2-landingpage.netlify.app/"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="projects-box">
-          <img src="assets/1 (3).png" alt="" />
-          <div class="projects-info">
-            <h4>Responsive Landing Page</h4>
-            <p>A fully responsive website built using HTML & CSS.</p>
-            <a href="https://css-3-landingpage.netlify.app/"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input
-          type="hidden"
-          name="access_key"
-          value="c96bf89a-ec26-41cf-b3b3-15541dfb3a64"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="icon" type="image/png" href="./assets/favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
         />
-        <div class="input-box">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            class="input-box"
-            required
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            class="input-box"
-            required
-          />
-        </div>
-        <textarea
-          name="message"
-          placeholder="Your Name"
-          class="input-box"
-          id="input-box"
-          cols="30"
-          rows="10"
-          required
-        ></textarea>
-        <p class="counter-p">
-          Total Characters: <span class="total-counter" id="total-counter">0</span>
-        </p>
-        <input type="submit" value="send Message" class="btn" />
-        <!-- <button type="submit">Submit</button> -->
-      </form>
-    </section>
+        <script
+            src="https://kit.fontawesome.com/6e6961a934.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header class="header">
+            <img
+                src="./assets/Sharingan_1.png"
+                width="50"
+                height="50"
+                alt="Mangekyou_Sharingan_Sasuke"
+                id="rotates"
+            />
+            <a href="#home" class="logo"> Nitin <span>Sutar</span> </a>
+            <div class="clock">
+                <div>
+                    <span id="hour">00</span>
+                    <span class="text">Hours</span>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <span class="text">Minutes</span>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <span class="text">Seconds</span>
+                </div>
+            </div>
+            <i class="bx bx-menu" id="menu-icon"></i>
 
-    <footer class="footer">
-      <div class="social">
-        <a href="https://www.linkedin.com/in/nitin-sutar-859a5b23a/"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-        <a href="https://github.com/NitinTSutar"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://www.instagram.com/__.nitin_sutar__/"
-          ><i class="bx bxl-instagram-alt"></i
-        ></a>
-      </div>
-      <ul class="list">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <p class="copyright">© All Rights Reserved | Nitin Sutar</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script src="script.js"></script>
-    
-  </body>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div id="particles-js"></div>
+            <div class="home-content">
+                <h3>Hi,</h3>
+                <h1>It's Nitin Sutar</h1>
+                <h3>I'm a <span>Frontend Developer</span></h3>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nitin-sutar-859a5b23a/"
+                        ><i class="bx bxl-linkedin-square"></i
+                    ></a>
+                    <a href="https://github.com/NitinTSutar"
+                        ><i class="bx bxl-github"></i
+                    ></a>
+                    <a href="https://www.instagram.com/__.nitin_sutar__/"
+                        ><i class="bx bxl-instagram-alt"></i
+                    ></a>
+                </div>
+
+                <a href="assets/Nitin_Sutar_CV.pdf" class="btn" download
+                    >Download CV</a
+                >
+            </div>
+            <div class="home-img">
+                <img src="assets/new-image.png" alt="" />
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="assets/new-image.png" alt="" />
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Frontend <span>Developer</span></h3>
+                <p>
+                    A passionate front-end developer skilled in HTML, CSS,
+                    JavaScript, and React, with a passion for building
+                    user-friendly and visually engaging web applications.
+                    Enthusiastic about collaborating with teams and continually
+                    enhancing skills through hands-on experience.
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2 class="heading">My <span>Education</span></h2>
+            <div class="education-container">
+                <div class="education-box">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h3>MSc IT</h3>
+                    <p>
+                        Completed my Post Graduation from Sathaye College
+                        (Autnomous) in the Academic Year 2022-2024
+                    </p>
+                </div>
+                <div class="education-box">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h3>BSc IT</h3>
+                    <p>
+                        Completed my Graduation from L S Raheja College of Arts
+                        and Commerce in the Academic Year 2019-2022
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <i class="bx bxl-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skills-box">
+                    <i class="bx bxl-css3"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skills-box">
+                    <i class="bx bxl-javascript"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skills-box">
+                    <i class="bx bxl-git"></i>
+                    <h3>GIT</h3>
+                </div>
+                <div class="skills-box">
+                    <i class="bx bxl-github"></i>
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="heading">Recent <span>projects</span></h2>
+            <div class="projects-container">
+                <div class="projects-box">
+                    <img src="assets/nefflix.png" alt="" />
+                    <div class="projects-info">
+                        <h4>Nefflix</h4>
+                        <p>Movie Recommendation System - React, Redux, TailwindCSS, TMDB API, Firebase, OpenRouter API.</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://nefflix.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/Nefflix"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-box">
+                    <img src="assets/hellofoods.png" alt="" />
+                    <div class="projects-info">
+                        <h4>Hello Foods</h4>
+                        <p>A React-based food delivery app with Swiggy API integration, allowing users to browse restaurants.</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://hellofoodys.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/food-delivery-app"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-box">
+                    <img src="assets/Tictactoe.png" alt="" />
+                    <div class="projects-info">
+                        <h4>Tic-Tac-Toe</h4>
+                        <p>A simple Tic-Tac-Toe game build using React.</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://tic-tac-toe-00x.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/Tic-Tac-Toe_react"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-box">
+                    <img src="assets/wheather.png" alt="" />
+                    <div class="projects-info">
+                        <h4>Weather-app</h4>
+                        <p>A Wheather App built using HTML, CSS & JavaScript.</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://weather-nitin.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/weather"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-box">
+                    <img src="assets/calculator.png" alt="" />
+                    <div class="projects-info">
+                        <h4>Calculator</h4>
+                        <p>A simple Calculator built using HTML & CSS.</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://calculator-nitin.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/Calculator"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-box">
+                    <img src="assets/swipper.png" alt="" />
+                    <div class="projects-info">
+                        <h4>Unlimited Image Slider </h4>
+                        <p>A simple Card Slider with Dynamic Image Loading</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://ul-cardslidder.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/card-slidder"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-box">
+                    <img src="assets/QR-generator.png" alt="" />
+                    <div class="projects-info">
+                        <h4>QR Generator</h4>
+                        <p>A QR Generator for Text/Link</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://qr-generating.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/qrGenerator"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-box">
+                    <img src="assets/headphone.png" alt="" />
+                    <div class="projects-info">
+                        <h4>Landing Page</h4>
+                        <p>A Responsive Landing Page built using HTML & CSS.</p>
+                        <div class="projects-links">
+                            <button>
+                                <a
+                                    href="https://css-2-landingpage.netlify.app/"
+                                    >🔗</a
+                                >
+                            </button>
+                            <button>
+                                <a
+                                    href="https://github.com/NitinTSutar/css-3-landing_page"
+                                    ><i class="fa fa-github"></i></a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="c96bf89a-ec26-41cf-b3b3-15541dfb3a64"
+                />
+                <div class="input-box">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        class="input-box"
+                        required
+                    />
+                </div>
+                <div class="input-box">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        class="input-box"
+                        required
+                    />
+                </div>
+                <textarea
+                    name="message"
+                    placeholder="Your Name"
+                    class="input-box"
+                    id="input-box"
+                    cols="30"
+                    rows="10"
+                    required
+                ></textarea>
+                <p class="counter-p">
+                    Total Characters:
+                    <span class="total-counter" id="total-counter">0</span>
+                </p>
+                <input type="submit" value="send Message" class="btn" />
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/nitin-sutar-859a5b23a/"
+                    ><i class="bx bxl-linkedin-square"></i
+                ></a>
+                <a href="https://github.com/NitinTSutar"
+                    ><i class="bx bxl-github"></i
+                ></a>
+                <a href="https://www.instagram.com/__.nitin_sutar__/"
+                    ><i class="bx bxl-instagram-alt"></i
+                ></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <p class="copyright">© All Rights Reserved | Nitin Sutar</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>

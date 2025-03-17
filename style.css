@@ -462,11 +462,13 @@ span {
   
 }
 .projects-info button:hover {
-  background: dodgerblue;
-  color: white;
+  background: var(--main-color);
 }
 .projects-links button a{
-  font-size: 22px;
+  font-size: 20px;
+}
+.projects-links button a:hover{
+  color: white;
 }
 .contact {
   background: var(--second-bg-color);
